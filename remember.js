@@ -33,7 +33,7 @@ console.log(nome_aluno, sobreNome_aluno)
 
 // Metodos do array
 const numeros = [1,2,3,4,5]
-console.log("\n Metodos | Map | Filter | Reduce")
+console.log(`\n Metodos Array -> [1,2,3,4,5] | Map | Filter | Reduce`)
 
 // map
 // passar por todos os valores e criar um novo array com mesmo tamanho modificando os elementos
@@ -50,10 +50,10 @@ const somaDoArray = numeros.reduce((anterior, atual) => anterior + atual, 0) // 
 console.log(somaDoArray)
 
 const alunos =  [
-    {nome: "Test1", nota: 8},
-    {nome: "Test2", nota: 5},
-    {nome: "Test3", nota: 7},
-    {nome: "Test4", nota: 4},
+    {nome: "Luiz", nota: 8},
+    {nome: "Renan", nota: 5},
+    {nome: "Ingrid", nota: 7},
+    {nome: "Jonas", nota: 4},
 ]
 // Filtrar e mostra em tela apenas os alunos aprovados (nota >= 6)
 const aprovados6 = alunos.filter((aluno) => {
@@ -66,3 +66,11 @@ console.log(aprovados6)
 // Aluno(a) {{Nome}} foi Aprovado com nota {{nota}}
 
 // Template string, map e desestruturação
+const textFormated = aprovados6.map((aprovados) => {
+    const {nome, nota} = aprovados
+
+    return `Aluno(a) ${nome} for Aprovado com nota ${nota}`
+})
+
+console.log("\n Alunos Aprovados:")
+console.log(textFormated)
