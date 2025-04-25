@@ -69,7 +69,7 @@ console.log(aprovados6)
 const textFormated = aprovados6.map((aprovados) => {
     const {nome, nota} = aprovados
 
-    return `Aluno(a) ${nome} for Aprovado com nota ${nota}`
+    return `Aluno(a) ${nome} foi Aprovado com nota ${nota}`
 })
 
 console.log("\n Alunos Aprovados:")
