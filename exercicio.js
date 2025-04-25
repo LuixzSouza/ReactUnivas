@@ -790,3 +790,34 @@ const textConc = terminadoCom7.reduce((ant, at) => {
     }
 }, '')
 //console.log(textConc)
+
+
+//operadores rest x spread
+
+// Colocar 3 pontinhos apenas
+// Rest (Juntar)
+function soma(...numeros){
+    console.log(numeros)
+    return numeros.reduce((ant, at) => ant + at, 0)
+}
+
+soma(1,2,3,4,5,)
+console.log(soma(1,2,3,4,5))
+
+// Spread (Espalhar)
+const valores = [1,3,1]
+const valoresAdicionados = [...valores, 4, 5, 6]
+console.log(valoresAdicionados)
+
+
+// operador ternário e operados coalescência nula
+
+// operador ternario
+const Idade = 18
+console.log(Idade >= 18 ? "Maior de idade" : "Menor de idade")
+
+// operador coalescência
+// Se tiver preenchido utilizar se não utiliza o da frente
+let usuario = "teste" // null, 0, undefined => false
+let nome = usuario ?? "Visitante"
+console.log(nome)
