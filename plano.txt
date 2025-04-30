@@ -10,3 +10,37 @@ zode -> Biblioteca
 
 24/06 -> Prova
 26/06 -> Apresentaçâo do Trabalho - Tema Livre (Criar Aplicação)
+
+Criando projeto React
+
+npm create vite@latest 
+Project name - primeiro-projeto-react
+Select frameWork - react
+Select variant - JavaScript
+
+StricMode -> Vai ignorar quando eu buildar (fazer o debug)
+createRoot -> Desenvolver meu projeto aqui dentro
+
+Não utilizar palavras Reservadas
+const   return
+let     class -> html ClassName
+var     importy
+function for -> HTMLFor
+default while
+wait    onclick -> onClick
+
+<h1> 
+Seu nome (Centralizado)
+Descrição pessoal (Padding left de 100px)
+
+<h2>
+Hobbie (Dentro de uma caixa colorida)
+ - HOB 01
+ - HOB 02
+ - HOB 03
+
+ <h2>
+ Sckill (Cor vermelha e sublinhado)
+ 1. React
+ 2. JavaScript
+ 3. Node
